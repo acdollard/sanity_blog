@@ -24,12 +24,17 @@ export default {
             title: 'Profile Image',
             name: 'profileImage',
             type: 'customImage'
+        },
+        {
+            title: 'Bio',
+            name: 'bio',
+            type: 'bodyText'
         }
     ],
     preview: {
         select: {
+            image: 'profileImage',
             title: 'name',
-            media: 'profileImage',
             slug: 'slug',
         },
         prepare ({ title, image, slug }) {
@@ -37,7 +42,6 @@ export default {
                 title,
                 media: image,
                 subtitle: slug.current,
-
             }
         }
     }
