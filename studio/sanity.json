@@ -30,5 +30,6 @@
       "name": "part:@sanity/desk-tool/structure",
       "path": "./components/SidebarList"
     }
+    
   ]
 }
