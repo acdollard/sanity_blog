@@ -1,8 +1,8 @@
 
 
 export default {
-    title: 'Excerpt text',
-    name: 'excerptText',
+    title: 'Normal Text',
+    name: 'normalText',
     type: 'array',
     of: [
         {
