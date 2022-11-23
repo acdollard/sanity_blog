@@ -12,6 +12,7 @@ function Layout({ children }) {
     <Footer></Footer>
     </>
   );
+  
 };
 
 export default Layout;
