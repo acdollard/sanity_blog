@@ -1,5 +1,8 @@
 import React from 'react';
+import HeroSection from '../components/homePage/HeroSection';
 
-const IndexPage = () => null;
+const IndexPage = () => (
+  <HeroSection></HeroSection>
+);
 
 export default IndexPage;
