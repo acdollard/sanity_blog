@@ -13,10 +13,10 @@ function HeroSection() {
         <div className="hero__wrapper">
           <div className="left">
             <h1 className="hero__heading">
-              Fuck my ass please please please
+              I am here, I am here, I am here . . .
             </h1>
             <ParagraphText className="hero__text">
-              gimmie that body baby letme lick you 
+              to read, write and, hopefully, get smarter
             </ParagraphText>
             <Button to="/blogs" tag={Link} className="hero__button">Explore Blogs</Button>
           </div>
