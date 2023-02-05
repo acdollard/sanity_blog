@@ -4,7 +4,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 /* eslint-enable */
 
 //import custom document
-import blog from './documents/blog';
+import blogs from './documents/blog';
 import author from './documents/author';
 import category from './documents/category'
 import featured from './documents/featured';
@@ -19,7 +19,7 @@ export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
     //documents
-    blog,
+    blogs,
     author,
     category,
     featured,
