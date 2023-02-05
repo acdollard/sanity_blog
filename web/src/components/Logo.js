@@ -4,8 +4,8 @@ import LogoStyles from '../styles/LogoStyles';
 
 function Logo() {
   return (
-    <LogoStyles>
-      <GrTechnology to={''}/>
+    <LogoStyles to="/#">
+      <GrTechnology to='/#'/>
     </LogoStyles>
   )
 }
