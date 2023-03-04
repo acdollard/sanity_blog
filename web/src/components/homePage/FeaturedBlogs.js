@@ -6,4 +6,4 @@ function FeaturedBlogs() {
   )
 }
 
-export default FeaturedBlogs
+export default FeaturedBlogs;
