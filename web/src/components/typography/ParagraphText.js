@@ -7,4 +7,4 @@ function ParagraphText({ children, ...props }) {
   )
 }
 
-export default ParagraphText
+export default ParagraphText;

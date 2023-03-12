@@ -13,8 +13,6 @@ function SEO({ title, description }) {
       }
     }
   `);
-  
-  console.log(site);
 
   const seo =  {
     title: title
