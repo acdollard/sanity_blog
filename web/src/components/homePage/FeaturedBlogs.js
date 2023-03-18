@@ -36,7 +36,6 @@ function FeaturedBlogs() {
   `);
 
   const featuredBlogs = data.allSanityFeatured.nodes[0].blog;
-  console.log(featuredBlogs);
 
   return (
     <FeaturedBlogsStyles>
