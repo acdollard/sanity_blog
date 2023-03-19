@@ -1,6 +1,6 @@
 import React from 'react';  
-import { graphql } from 'gatsby';
-import { FiCalendar } from 'react-icons/fi';
+import { graphql, Link } from 'gatsby';
+import { FiCalendar, FiUser } from 'react-icons/fi';
 import { BiCategory } from 'react-icons/bi';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import  { format } from 'date-fns';
@@ -9,6 +9,7 @@ import SEO from '../components/SEO';
 import { SingleBlogStyles } from '../styles/blog/SingleBlogStyles';
 import ParagraphText from '../components/typography/ParagraphText';
 import { Title } from '../components/typography/Title';
+import MyPortableText from '../components/MyPortableText';
 
 export const postQuery = graphql`
   query SingleBlogQuery($id: String!) {
@@ -65,10 +66,26 @@ function SingleBlog({ data }) {
               <span>
                 {blog.categories.map((item, index) => 
                 (
-                  <h1>{item.title}</h1>
+                  <span key={item.slug.current}>
+                    <Link to={`/categories/${item.slug.current}`}>
+                      {item.title}
+                    </Link>
+                    {index < blog.categories.length -1 ? ', ' : ''}
+                    </span >
                 ))}
               </span>
             </ParagraphText>
+            <ParagraphText className="author">
+              <FiUser style={{height: '1em', width: '1em'}}/>
+                <Link to={`/authors/${blog.author.slug.current}`}>
+                  {blog.author.name}
+                </Link>
+
+            </ParagraphText>
+          </div>
+          <hr className="hr" />
+          <div className="body">
+            <MyPortableText value={blog._rawBody}></MyPortableText>
           </div>
         </div>
       </PageSpace>
