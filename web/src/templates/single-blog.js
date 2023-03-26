@@ -40,7 +40,6 @@ export const postQuery = graphql`
 `;
 
 function SingleBlog({ data }) {
-  console.log(data);
   const blog = data.sanityBlog;
 
   return (
