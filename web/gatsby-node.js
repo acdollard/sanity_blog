@@ -4,6 +4,8 @@ const postsPerPage = parseInt(process.env.GATSBY_POST_PER_PAGE) || 10;
   //template paths
 const singleBlogTemplate = require.resolve('./src/templates/single-blog.js');
 const blogListTemplate = require.resolve('./src/templates/blog-list.js');
+const singleCategoryTemplate = require.resolve('./src/templates/single-category.js');
+const categoryListTemplate = require.resolve('./src/templates/category-list.js');
 
 
   const { createPage } = actions;
@@ -17,11 +19,20 @@ const blogListTemplate = require.resolve('./src/templates/blog-list.js');
           }
         }
       }
+    allSanityCategory {
+      nodes {
+        id
+        slug {
+          current
+        }
+      }
+    }
   }
   `);
 
   if (result.errors) throw result.errors;
   const blogs = result.data.allSanityBlog.nodes;
+  const categories = result.data.allSanityCategory.nodes;
 
   //single blog pages
       blogs.forEach((blog) => {
@@ -31,6 +42,15 @@ const blogListTemplate = require.resolve('./src/templates/blog-list.js');
           context: { id: blog.id }
         });
       });
+
+  //single category pages
+    categories.forEach(category => {
+        createPage({
+          path: `/categories/${category.slug.current}`,
+          component: singleCategoryTemplate,
+          context: { id: category.id },
+        })
+      })
 
   // blog-list pages
   const totalBlogListPages = Math.ceil(blogs.length / postsPerPage);
@@ -46,5 +66,20 @@ const blogListTemplate = require.resolve('./src/templates/blog-list.js');
       }
     })
   })
+
+    // category-list pages
+    const totalCategoryListPages = Math.ceil(categories.length / postsPerPage);
+    Array.from({ length: totalCategoryListPages }).forEach((_, index) => {
+      createPage({
+        path: index === 0 ? '/categories' : `/categories/${index + 1}`,
+        component: categoryListTemplate,
+        context: {
+          limit: postsPerPage,
+          offset: index * postsPerPage,
+          numberOfPages: totalCategoryListPages,
+          currentPage: index + 1,
+        }
+      })
+    })
 
 };
