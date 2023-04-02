@@ -7,24 +7,24 @@ import AuthorGrid from '../components/authors/AuthorGrid';
 import Pagination from  '../components/Pagination'; 
 
 export const AuthorsQuery = graphql`
-  query authorsQuery($limit: Int!, $offset: Int!){
-    allSanityAuthor(limit: $limit, skip: $offset){
+  query authorQuery($limit: Int!, $offset: Int!) {
+    allSanityAuthor(limit: $limit, skip: $offset) {
       nodes {
         id
         name
         slug {
           current
         }
-        profileImage{
+        profileImage {
           alt
-          asset{
+          asset {
             gatsbyImageData
           }
         }
       }
     }
   }
-`
+`;
 
 function AuthorList({ data, pageContext }) {
   const authors = data.allSanityAuthor.nodes

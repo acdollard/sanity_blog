@@ -66,7 +66,7 @@ const singleAuthorTemplate = require.resolve('./src/templates/single-author.js')
     //single authors pages
     authors.forEach((author) => {
       createPage({
-        path: `/authors/${author.slug.current}/`,
+        path: `/authors/${author.slug.current}`,
         component: singleAuthorTemplate,
         context: { id: author.id }
       });

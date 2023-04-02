@@ -1,19 +1,19 @@
 import React from 'react';
-import { AuthorItemStyles } from '../../styles/author/AuthorItemStyles';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import { AuthorItemStyles } from '../../styles/author/AuthorItemStyles';
 import { Title } from '../typography/Title';
 
-function AuthorItem({ profileImage, name, slug }) {
+function AuthorItem({ name, slug, profileImage }) {
   return (
-    <AuthorItemStyles to={slug.current} className="author-item">
-      <GatsbyImage 
+    <AuthorItemStyles className="author-item" to={`/authors/${slug.current}`}>
+      <GatsbyImage
         image={profileImage.asset.gatsbyImageData}
-        alt={profileImage.asset.alt}
+        alt={profileImage.alt}
         className="profileImage"
       />
       <Title>{name}</Title>
     </AuthorItemStyles>
-  )
+  );
 }
 
-export default AuthorItem
+export default AuthorItem;
