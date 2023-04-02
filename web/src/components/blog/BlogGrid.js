@@ -1,5 +1,4 @@
 import React from 'react';
-import blog from '../../../../studio/schemas/documents/blog';
 import { BlogGridStyles } from '../../styles/blog/BlogGridStyles';
 import BlogItem from './BlogItem';
 

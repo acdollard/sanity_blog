@@ -46,8 +46,7 @@ function CategoryList(  {data, pageContext}) {
             numberOfPages={numberOfPages}
             baseURL="/categories"
             />
-          )
-
+            )
           }
         </div>
       </PageSpace>

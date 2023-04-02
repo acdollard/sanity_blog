@@ -75,11 +75,11 @@ function SingleBlog({ data }) {
               </span>
             </ParagraphText>
             <ParagraphText className="author">
-              <FiUser style={{height: '1em', width: '1em'}}/>
+              <FiUser style={{height: '1em', width: '1em'}}>
                 <Link to={`/authors/${blog.author.slug.current}`}>
                   {blog.author.name}
                 </Link>
-
+              </FiUser>
             </ParagraphText>
           </div>
           <hr className="hr" />

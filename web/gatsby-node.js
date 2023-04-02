@@ -7,6 +7,7 @@ const blogListTemplate = require.resolve('./src/templates/blog-list.js');
 const singleCategoryTemplate = require.resolve('./src/templates/single-category.js');
 const categoryListTemplate = require.resolve('./src/templates/category-list.js');
 const authorListTemplate = require.resolve('./src/templates/author-list.js');
+const singleAuthorTemplate = require.resolve('./src/templates/single-author.js');
 
   const { createPage } = actions;
   const result = await graphql(`
@@ -59,7 +60,17 @@ const authorListTemplate = require.resolve('./src/templates/author-list.js');
           component: singleCategoryTemplate,
           context: { id: category.id },
         })
-      })
+      });
+
+
+    //single authors pages
+    authors.forEach((author) => {
+      createPage({
+        path: `/authors/${author.slug.current}/`,
+        component: singleAuthorTemplate,
+        context: { id: author.id }
+      });
+    });
 
   // blog-list pages
   const totalBlogListPages = Math.ceil(blogs.length / postsPerPage);
