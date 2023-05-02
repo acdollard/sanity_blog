@@ -16,14 +16,14 @@ function HeroSection() {
             This Week in Alex Town
             </h1>
             <ParagraphText className="hero__text">
-            TWAT is a blog written by a dingus. Don't read it.
+            T.W.A.T. is a blog written by a dingus. Don't read it.
             </ParagraphText>
             <Button to="/blogs" tag={Link} className="hero__button">Explore Blogs</Button>
           </div>
           <div className='right'>
             <StaticImage 
               className='hero__image'
-              src="../../images/vr-guy.jpg"
+              src="../../images/image1.jpeg"
               alt="vr guy"
               placeholder="blurred"
               objectPosition="50% 30%"
