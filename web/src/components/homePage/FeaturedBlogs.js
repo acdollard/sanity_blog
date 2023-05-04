@@ -39,12 +39,8 @@ function FeaturedBlogs() {
 
   return (
     <FeaturedBlogsStyles>
-      <SectionTitle>Featured Blogs</SectionTitle>
+      <SectionTitle>Fave Blogs</SectionTitle>
       <ParagraphText className="featuredBlogs__text">
-        Sanity.io is the platform for structured content. It comes with an
-        open-source editing environment called Sanity Studio that you can
-        customize with JavaScript, and a real-time hosted data store. Sanity has
-        generous included quotas – so getting started is free.
       </ParagraphText>
       <BlogGrid blogs={featuredBlogs}/>
     </FeaturedBlogsStyles>
