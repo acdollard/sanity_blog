@@ -12,10 +12,7 @@ function Footer() {
       <div className='container'>
         <Logo />
         <ParagraphText className="footer__text">
-          absakjdhasdlikaslikdalksdalksalkans. 
-          asljnhdlkashndj .
-          alskdjalksajfpirjvouhernlfkjnbas.,cm oiaeh ao.
-          asoihf ohaeiohf hoaeiof.
+What am I going to put here?
         </ParagraphText>
         <ul className='footer__menuList'>
           {menu.map(item => (
