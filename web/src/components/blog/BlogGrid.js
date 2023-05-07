@@ -3,6 +3,7 @@ import { BlogGridStyles } from '../../styles/blog/BlogGridStyles';
 import BlogItem from './BlogItem';
 
 function BlogGrid({ blogs }) {
+  console.log(blogs)
   return (
     <BlogGridStyles>
       {blogs.map((b) => <BlogItem

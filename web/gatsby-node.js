@@ -44,10 +44,12 @@ const singleAuthorTemplate = require.resolve('./src/templates/single-author.js')
   const categories = result.data.allSanityCategory.nodes;
   const authors = result.data.allSanityAuthor.nodes
 
+  console.log(result.data);
+
   //single blog pages
       blogs.forEach((blog) => {
         createPage({
-          path: `/blogs/${blog.slug.current}/`,
+          path: `/blogs/${blog.slug.current}`,
           component: singleBlogTemplate,
           context: { id: blog.id }
         });
@@ -55,6 +57,7 @@ const singleAuthorTemplate = require.resolve('./src/templates/single-author.js')
 
   //single category pages
     categories.forEach(category => {
+      console.log("Hi")
         createPage({
           path: `/categories/${category.slug.current}`,
           component: singleCategoryTemplate,
