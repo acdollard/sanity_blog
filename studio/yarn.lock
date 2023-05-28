@@ -1000,6 +1000,11 @@
   resolved "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.16.17.tgz"
   integrity sha512-/2agbUEfmxWHi9ARTX6OQ/KgXnOWfsNlTeLcoV7HSuSTv63E4DqtAc+2XqGw1KHxKMHGZgbVCZge7HXWX9Vn+w==
 
+"@fontsource/noto-serif-jp@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.npmjs.org/@fontsource/noto-serif-jp/-/noto-serif-jp-5.0.1.tgz"
+  integrity sha512-kZlLk37bH+c5KYasJqPgmFJc6zDcAa00jcjlGdNxhqadlpRS9cv0RBL97xHpXviAdPVGdyKgxTJb5xSc6940SQ==
+
 "@hot-loader/react-dom@^16.9.0-4.12.11":
   version "16.14.0+4.13.0"
   dependencies:

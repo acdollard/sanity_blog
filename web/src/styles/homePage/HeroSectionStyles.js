@@ -28,7 +28,7 @@ export const HeroSectionStyles = styled.div`
       .hero__heading {
         max-width: 450px;
         font-size: 4rem;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Noto Serif JP', sans-serif;
         font-weight: '700';
         margin: 0.2rem 0;
       }

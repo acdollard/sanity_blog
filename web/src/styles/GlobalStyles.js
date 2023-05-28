@@ -14,10 +14,11 @@ const GlobalStyles = createGlobalStyle`
     --black-1: #0D121F;
     --black-2: #121826;
     --white-1: #C6BED9;
-    --gray: #64718A;
+    --gray: #a4b6da;
     --grey: var(--gray);
     --white: white;
     --black: black;
+
   }
   html{
     font-size: 10px;
@@ -27,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
     min-height: 100vh;
     line-height: 1.5;
     width: 100%;
-    font-family: 'Inter';
+    font-family: 'Noto Serif JP', sans-serif;
     background: var(--black-1);
     color: var(--white);
   }
@@ -50,3 +51,20 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 export default GlobalStyles;
+
+
+
+
+//extra styles 
+
+// --primary: #1bb013;
+// --secondary: #24e9ff;
+// --darkBlue: #070747; 
+// --darkPurple: #0E0034;
+// --black-1: #0D121F;
+// --black-2: #121826;
+// --white-1: #C6BED9;
+// --gray: #64718A;
+// --grey: var(--gray);
+// --white: white;
+// --black: black;

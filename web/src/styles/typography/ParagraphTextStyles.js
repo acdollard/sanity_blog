@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const ParagraphTextStyles = styled.p`
-  font-family: 'Inter', sans-serif;
+font-family: 'Noto Serif JP';
   color: var(--grey);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   @media only screen and (max-width: 768px) {
     font-size: 1.4rem;
