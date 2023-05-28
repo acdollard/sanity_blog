@@ -1,4 +1,4 @@
 module.exports = {
-  projectId: process.env.GATSBY_SANITY_PROJECT_ID,
-  dataset: process.env.GATSBY_SANITY_DATASET,
+  projectId: "xxliayn2",
+  dataset: "production",
 }
