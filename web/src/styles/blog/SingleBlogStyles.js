@@ -27,7 +27,7 @@ export const SingleBlogStyles = styled.div`
       width: 20px;
     }
     a {
-      color: var(--gray);
+      color: var(--darkBlue);
       &:hover {
         text-decoration: underline;
       }
@@ -35,7 +35,7 @@ export const SingleBlogStyles = styled.div`
   }
   .hr {
     margin: 2rem 0;
-    color: var(--gray);
+    color: var(--darkBlue);
   }
   .body {
     margin-top: 2rem;

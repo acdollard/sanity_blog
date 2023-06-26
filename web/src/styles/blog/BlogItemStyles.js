@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const BlogItemStyles = styled.div`
   display: inline-block;
   border-radius: 12px;
+  .p {
+    color: var(--darkBlue);
+  }
   .img {
     height: 250px;
     margin-bottom: 1.5rem;
@@ -22,7 +25,7 @@ export const BlogItemStyles = styled.div`
   }
   .categoriesText {
     a {
-      color: var(--gray);
+      color: var(--darkBlue);
       &:hover {
         text-decoration: underline;
       }

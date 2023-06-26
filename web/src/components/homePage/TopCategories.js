@@ -31,7 +31,6 @@ function TopCategories() {
     <TopCategoriesStyles>
       <SectionTitle>Top Categories</SectionTitle>
       <ParagraphText className="info">
-        Yadda yadda biungbong yoohoo patchy business boy
       </ParagraphText>
       <CategoryGrid categories={categories}></CategoryGrid>
     </TopCategoriesStyles>

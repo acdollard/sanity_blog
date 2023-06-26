@@ -6,9 +6,15 @@ export const HeroSectionStyles = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
+  background: var(--primaryLight);
   .container {
     height: 100%;
+    background: var(--primaryLight);
   }
+  h1 {
+    color: var(--darkBlue);
+  }
+
   .hero__wrapper {
     width: 100%;
     height: 100%;
@@ -25,15 +31,16 @@ export const HeroSectionStyles = styled.div`
     .left {
       width: 50%;
       padding: 50px 0;
+
       .hero__heading {
-        max-width: 450px;
+  
         font-size: 4rem;
         font-family: 'Noto Serif JP', sans-serif;
         font-weight: '700';
         margin: 0.2rem 0;
       }
       .hero__text {
-        max-width: 350px;
+        max-width: 500px;
       }
       .hero__button {
         margin-top: 1.5rem;

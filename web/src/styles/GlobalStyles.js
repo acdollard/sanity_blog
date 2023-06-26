@@ -11,13 +11,15 @@ const GlobalStyles = createGlobalStyle`
     --secondary: #24e9ff;
     --darkBlue: #070747; 
     --darkPurple: #0E0034;
-    --black-1: #0D121F;
+    --black-1: #F7F8F3;
     --black-2: #121826;
     --white-1: #C6BED9;
     --gray: #a4b6da;
     --grey: var(--gray);
     --white: white;
-    --black: black;
+    --black: #EAEBE6; 
+    --primaryLight: #F7F8F3;
+    --secondaryLight: #EAEBE6; 
 
   }
   html{

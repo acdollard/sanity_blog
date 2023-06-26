@@ -10,6 +10,7 @@ export default styled.header`
   overflow: hidden;
   padding: 1rem 0;
   transition: background 0.3s ease-in-out;
+  background: var(--black-2);
   .header__container {
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,7 @@ export default styled.header`
       li {
         &:hover {
           a {
-            background: var(--black-2);
+            background: var(--white-1);
           }
         }
         a {

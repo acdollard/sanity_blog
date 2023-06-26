@@ -1,11 +1,11 @@
 import React from 'react';
-import { GrTechnology } from 'react-icons/gr';
+import { GrLike } from 'react-icons/gr';
 import LogoStyles from '../styles/LogoStyles';
 
 function Logo() {
   return (
     <LogoStyles to="/#">
-      <GrTechnology to='/#'/>
+      <GrLike to='/#'/>
     </LogoStyles>
   )
 }

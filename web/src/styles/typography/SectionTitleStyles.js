@@ -16,4 +16,5 @@ export const TitleStyles = styled.h2`
   @media only screen and (max-width: 768px) {
     font-size: 1.8rem;
   }
+  color: var(--primary);
 `;

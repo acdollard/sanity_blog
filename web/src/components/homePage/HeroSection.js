@@ -12,10 +12,13 @@ function HeroSection() {
       <div className="container">
         <div className="hero__wrapper">
           <div className="left">
-            <h1 className="hero__heading">
-            This Week in Alex Town
-            </h1>
-            <ParagraphText className="hero__text">
+            <h1  className="hero__heading">
+            This
+            Week
+            in
+            Alex
+            Town</h1>
+            <ParagraphText className="hompageText">
             T.W.A.T. is a blog written by a dingus. Don't read it.
             </ParagraphText>
             <Button to="/blogs" tag={Link} className="hero__button">Explore Blogs</Button>
@@ -23,7 +26,7 @@ function HeroSection() {
           <div className='right'>
             <StaticImage 
               className='hero__image'
-              src="../../images/image1.jpeg"
+              src="../../images/IMG_1067.jpg"
               alt="vr guy"
               placeholder="blurred"
               objectPosition="50% 30%"
