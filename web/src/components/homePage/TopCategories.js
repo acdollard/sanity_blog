@@ -30,7 +30,8 @@ function TopCategories() {
   return (
     <TopCategoriesStyles>
       <SectionTitle>Main Categories</SectionTitle>
-      <ParagraphText className="info">Putting things into categories is hard. 
+      <ParagraphText className="info">
+        
       </ParagraphText>
       <CategoryGrid categories={categories}></CategoryGrid>
     </TopCategoriesStyles>
