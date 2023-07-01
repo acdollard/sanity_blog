@@ -39,7 +39,7 @@ const myPortableTextComponents={
       return (
         <GatsbyImage
           image={gatsbyImageData}
-          alt={value.alt}
+          alt={value.alt ? value.alt : ""}
           className="bodyImage"
         />
       )

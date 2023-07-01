@@ -7,8 +7,8 @@ function AuthorItem({ name, slug, profileImage }) {
   return (
     <AuthorItemStyles className="author-item" to={`/authors/${slug.current}`}>
       <GatsbyImage
-        image={profileImage.asset.gatsbyImageData}
-        alt={profileImage.alt}
+        image={profileImage.asset.gatsbyImageData ? profileImage.asset.gatsbyImageData : null}
+        alt={profileImage.alt ? profileImage.alt : ""}
         className="profileImage"
       />
       <Title>{name}</Title>

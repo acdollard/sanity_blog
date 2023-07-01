@@ -41,7 +41,6 @@ export const BlogsQuery = graphql`
 function BlogList({data, pageContext }) {
   const {  currentPage, numberOfPages } = pageContext;
   const blogs = data.allSanityBlog.nodes;
-  console.log("HEO")
   return (
     <>
       <SEO title="blogs"/>

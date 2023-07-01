@@ -56,7 +56,7 @@ function SingleAuthor({ data }) {
       <div className="conatiner">
         <SingleAuthorStyles>
           <div className="author-header">
-            <GatsbyImage image={author.profileImage.asset.gatsbyImageData} alt={author.profileImage.alt} className="profileImage"/>
+            <GatsbyImage image={author.profileImage.asset.gatsbyImageData} alt={author.profileImage.alt ? author.profileImage.alt : ""} className="profileImage"/>
           <Title className="name">{author.name}</Title>
           </div>
           <div className="bio">

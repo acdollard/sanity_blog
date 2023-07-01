@@ -9,7 +9,7 @@ function CategoryGrid({ categories }) {
         <CategoryItem
           key={item.id}
           title={item.title}
-          description={item._rawDescription}
+          description={item._rawDescription ? item._rawDescription : ""}
           slug={item.slug} 
         />
       ))

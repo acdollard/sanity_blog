@@ -11,8 +11,8 @@ function BlogItem({ title, path, image, categories, publishedAt }) {
     <BlogItemStyles>
       <Link to={`/blogs/${path}`}>
         <GatsbyImage 
-          image={image.imageData}
-          alt={image.altText}
+          image={image.imageData ? image.imageData : null}
+          alt={image.altText ? image.altText : ""}
           className="img"
         />
       </Link>

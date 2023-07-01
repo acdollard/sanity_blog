@@ -57,7 +57,6 @@ const singleAuthorTemplate = require.resolve('./src/templates/single-author.js')
 
   //single category pages
     categories.forEach(category => {
-      console.log("Hi")
         createPage({
           path: `/categories/${category.slug.current}`,
           component: singleCategoryTemplate,

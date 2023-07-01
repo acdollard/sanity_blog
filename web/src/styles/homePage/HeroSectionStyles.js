@@ -6,10 +6,9 @@ export const HeroSectionStyles = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  background: var(--primaryLight);
   .container {
     height: 100%;
-    background: var(--primaryLight);
+
   }
   h1 {
     color: var(--darkBlue);
@@ -25,7 +24,7 @@ export const HeroSectionStyles = styled.div`
       left: 0;
       width: 50%;
       height: 100%;
-      background: linear-gradient(135deg, #030213, #08011c);
+
       z-index: -1;
     }
     .left {
