@@ -12,7 +12,6 @@ export const SingleCategoryStyles = styled.div`
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(90deg, #0d121f, #0d121fe0 30%, #4a46eb14);
       z-index: -1;
     }
     .coverImage {
