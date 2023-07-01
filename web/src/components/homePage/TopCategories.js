@@ -29,8 +29,8 @@ function TopCategories() {
   const categories = data.allSanityFeatured.nodes[0].category;
   return (
     <TopCategoriesStyles>
-      <SectionTitle>Top Categories</SectionTitle>
-      <ParagraphText className="info">
+      <SectionTitle>Main Categories</SectionTitle>
+      <ParagraphText className="info">Putting things into categories is hard. 
       </ParagraphText>
       <CategoryGrid categories={categories}></CategoryGrid>
     </TopCategoriesStyles>

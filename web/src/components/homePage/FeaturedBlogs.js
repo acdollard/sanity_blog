@@ -39,8 +39,9 @@ function FeaturedBlogs() {
 
   return (
     <FeaturedBlogsStyles>
-      <SectionTitle>Fave Blogs</SectionTitle>
+      <SectionTitle>Best Blogs</SectionTitle>
       <ParagraphText className="featuredBlogs__text">
+        If I ever wrote something and thought "damn that's good" I would probably put it here.
       </ParagraphText>
       <BlogGrid blogs={featuredBlogs}/>
     </FeaturedBlogsStyles>

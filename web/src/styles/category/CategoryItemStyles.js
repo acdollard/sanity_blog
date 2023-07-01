@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CategoryItemStyles = styled.div`
-  background: var(--black-2);
+  background: var(--secondaryLight);
   padding: 2rem;
   border-radius: 12px;
   .title {
@@ -9,5 +9,8 @@ export const CategoryItemStyles = styled.div`
   }
   .text {
     margin-bottom: 2rem;
+  }
+  .categories_card_text {
+    color: var(--primaryLight)
   }
 `;

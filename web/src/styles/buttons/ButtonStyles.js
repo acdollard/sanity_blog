@@ -19,7 +19,7 @@ export const ButtonStyles = styled(Link)`
   border: ${({ variant }) =>
     variant === buttonType.outline ? '2px solid var(--primary)' : 'none'};
   color: ${({ variant }) =>
-    variant === buttonType.secondary ? 'var(--black-1)' : 'var(--white)'};
+    variant === buttonType.secondary ? 'var(--black-1)' : 'var(--primaryLight)'};
   @media only screen and (max-width: 768px) {
     padding: 0.8rem 1.2rem;
     font-size: 1.4rem;

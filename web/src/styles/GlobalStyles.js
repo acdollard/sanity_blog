@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
     --grey: var(--gray);
     --white: white;
     --black: #EAEBE6; 
-    --primaryLight: #F7F8F3;
+    --primaryLight: #eeeee4;
     --secondaryLight: #EAEBE6; 
 
   }
