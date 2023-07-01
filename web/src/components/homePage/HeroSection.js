@@ -24,13 +24,13 @@ function HeroSection() {
             <Button to="/blogs" tag={Link} className="hero__button">Explore Blogs</Button>
           </div>
           <div className='right'>
-            <StaticImage 
+            {/* <StaticImage 
               className='hero__image'
               src="../../images/patch_2.jpg"
               alt="vr guy"
               placeholder="blurred"
               objectPosition="50% 30%"
-            />
+            /> */}
           </div>
         </div>
       </div>
