@@ -36,7 +36,7 @@ const GlobalStyles = createGlobalStyle`
   }
   a{
     text-decoration: none;
-    color: var(--white);
+    color: var(--darkBlue);
   }
   .container{
     max-width: 1200px;

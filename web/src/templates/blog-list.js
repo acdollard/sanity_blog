@@ -48,9 +48,7 @@ function BlogList({data, pageContext }) {
         <div className="container">
           <PageHeader
             title="All Blog Posts"
-            description="Thismoneh we will eat all 444t4 hotdogs oin thebbruffle tooast
-            gud heavenly thinksh tat i wuz in theur quin oruf I didnut noew wut elaz too do
-            "
+            description=""
           />
           <BlogGrid blogs={blogs}/>
           {numberOfPages > 1 &&

@@ -37,9 +37,7 @@ function AuthorList({ data, pageContext }) {
       <div className="container">
         <PageHeader
           title="All Authors"
-          description="Thismoneh we will eat all 444t4 hotdogs oin thebbruffle tooast
-          gud heavenly thinksh tat i wuz in theur quin oruf I didnut noew wut elaz too do
-          "
+          description=""
         />
         <AuthorGrid authors={authors} />
         {

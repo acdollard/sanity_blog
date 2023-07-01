@@ -6,6 +6,7 @@ export const HeroSectionStyles = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
+  background: white;
   .container {
     height: 100%;
 

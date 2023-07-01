@@ -36,8 +36,7 @@ function CategoryList(  {data, pageContext}) {
         <div className="container">
           <PageHeader 
             title="All Categories"
-            description="Thee month have I wrutehced thuer gretist bliock panther moveis
-            theu my littlu qweuwen hert hast desrired."
+            description=""
           />
           <CategoryGrid categories={categories} />
           {numberOfPages > 1 && (
