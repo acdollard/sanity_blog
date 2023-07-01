@@ -26,7 +26,7 @@ function HeroSection() {
           <div className='right'>
             <StaticImage 
               className='hero__image'
-              src="../../images/IMG_1067.jpg"
+              src="../../images/patch_2.jpg"
               alt="vr guy"
               placeholder="blurred"
               objectPosition="50% 30%"
