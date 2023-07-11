@@ -11,9 +11,9 @@ function BlogGrid({ blogs }) {
       title={b.title}
       path={b.slug.current}
       categories={b.categories}
-      image={{
-        imageData: b.coverImage.asset ? b.coverImage.asset.gatsbyImageData : null,
-        altText: b.coverImage.asset ? b.coverImage.alt : null,
+      image={b.coverImage && {
+        imageData: b.coverImage.asset ? b.coverImage.asset.gatsbyImageData : "",
+        altText: b.coverImage ? b.coverImage.alt : "",
       }}
       publishedAt={b.publishedAt}
       />)}
