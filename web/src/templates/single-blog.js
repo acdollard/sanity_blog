@@ -49,7 +49,7 @@ function SingleBlog({ data }) {
         <div className="container">
           <div className="blog-header">
             <GatsbyImage 
-              image={blog.coverImage?.asset.gatsbyImageData}
+              image={blog.coverImage?.asset?.gatsbyImageData}
               alt={blog.coverImage?.alt}
               className="blog-cover-image"
             />
