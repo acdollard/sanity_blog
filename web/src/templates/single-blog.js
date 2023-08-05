@@ -49,8 +49,8 @@ function SingleBlog({ data }) {
         <div className="container">
           <div className="blog-header">
             <GatsbyImage 
-              image={blog.coverImage.asset !== null ? blog.coverImage.asset.gatsbyImageData : null}
-              alt={blog.coverImage ? blog.coverImage.alt : ""}
+              image={blog.coverImage?.asset.gatsbyImageData}
+              alt={blog.coverImage?.alt}
               className="blog-cover-image"
             />
             <Title className="title">{blog.title}</Title>
@@ -76,8 +76,8 @@ function SingleBlog({ data }) {
             </ParagraphText>
             <ParagraphText className="author">
               <FiUser style={{height: '1em', width: '1em'}}>
-                <Link to={`/authors/${blog.author.slug.current}`}>
-                  {blog.author.name}
+                <Link to={`/authors/${blog.author?.slug.current}`}>
+                  {blog.author?.name}
                 </Link>
               </FiUser>
             </ParagraphText>

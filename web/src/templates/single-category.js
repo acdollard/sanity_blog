@@ -59,9 +59,9 @@ function SingleCategory( { data } ) {
             <MyPortableText value={category._rawDescription}></MyPortableText>
           </PageHeader>
           <GatsbyImage 
-          image={category.coverImage.asset ? category.coverImage.asset.gatsbyImageData : null} 
+          image={category.coverImage?.asset.gatsbyImageData} 
           className="coverImage"
-          alt={category.coverImage.alt ? category.coverImage.alt : ""} 
+          alt={category.coverImage?.alt} 
           />
           <BlogGrid blogs={blogs}/>
         </div>
