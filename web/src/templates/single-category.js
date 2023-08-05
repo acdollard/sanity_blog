@@ -59,7 +59,7 @@ function SingleCategory( { data } ) {
             <MyPortableText value={category._rawDescription}></MyPortableText>
           </PageHeader>
           <GatsbyImage 
-          image={category.coverImage?.asset.gatsbyImageData} 
+          image={category.coverImage?.asset?.gatsbyImageData} 
           className="coverImage"
           alt={category.coverImage?.alt} 
           />
