@@ -39,7 +39,7 @@ function FeaturedBlogs() {
 
   return (
     <FeaturedBlogsStyles>
-      <SectionTitle>Best Blogs</SectionTitle>
+      <SectionTitle>Featured Blogs</SectionTitle>
       <ParagraphText className="featuredBlogs__text">
         
       </ParagraphText>
