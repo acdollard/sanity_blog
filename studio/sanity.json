@@ -1,7 +1,7 @@
 {
   "root": true,
   "api": {
-    "projectId": "xxliayn2",
+    "projectId": "process.env.PROJECTID",
     "dataset": "production"
   },
   "project": {
@@ -16,9 +16,7 @@
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [
@@ -30,6 +28,5 @@
       "name": "part:@sanity/desk-tool/structure",
       "path": "./components/SidebarList"
     }
-    
   ]
 }
