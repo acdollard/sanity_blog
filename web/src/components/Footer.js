@@ -11,9 +11,6 @@ function Footer() {
     <FooterStyles>
       <div className='container'>
         <Logo />
-        <ParagraphText className="footer__text">
-What am I going to put here?
-        </ParagraphText>
         <ul className='footer__menuList'>
           {menu.map(item => (
             <li key={item.path}>
