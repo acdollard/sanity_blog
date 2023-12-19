@@ -1,5 +1,5 @@
 import React from 'react';
-import FeaturedBlogs from '../components/homePage/FeaturedBlogs';
+import LatestBlogs from '../components/homePage/LatestBlogs';
 import HeroSection from '../components/homePage/HeroSection';
 import SEO from '../components/SEO';
 import TopCategories from '../components/homePage/TopCategories';
@@ -9,7 +9,7 @@ const IndexPage = () => (
     <SEO></SEO>
     <HeroSection></HeroSection>
     <div className="container">
-      <FeaturedBlogs/>
+      <LatestBlogs/>
       <TopCategories />
     </div>
   </>
