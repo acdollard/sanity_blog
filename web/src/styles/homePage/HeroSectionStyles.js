@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const HeroSectionStyles = styled.div`
-  min-height: 70vh;
+  min-height: 45vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  background: var(--primaryLight);;
+  background: var(--secondaryLight);;
   .container {
     height: 100%;
 

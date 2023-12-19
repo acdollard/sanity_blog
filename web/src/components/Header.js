@@ -72,7 +72,7 @@ function Header() {
                                 <Link to={item.path} onClick={handleNavItemClick}>{item.title}</Link>
                             </li>
                             ))}
-                            <li className='searchIcon'> 
+                            {/* <li className='searchIcon'> 
                                 <div className='searchIcon__wrapper'
                                 onClick={handleSearchModalOpen}
                                 onKeyDown={handleSearchModalOpen}
@@ -81,7 +81,7 @@ function Header() {
                                 >
                                 <MdSearch />
                                 </div>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                 </div>    
