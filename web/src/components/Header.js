@@ -30,13 +30,42 @@ function Header() {
             <div className='header__container'>
                 <Logo />
                 <div className={clsx('nav__wrapper', isNavOpen && 'open')}>
+                    <div className='mobileIcon'>
+                        <div className='searchIcon'>
+                            <div className='searchIcon__wrapper'
+                                onClick={handleSearchModalOpen}
+                                onKeyDown={handleSearchModalOpen}
+                                role="button"
+                                tabIndex={0}
+                            >
+                                    <MdSearch />
+                            </div>
+                        </div>
+                        <ActionButton className='mobileMenuBtn'
+                            onClick={() => setIsNavOpen(true)}
+                            onKeyDown={() => setIsNavOpen(true)}
+                            >
+                            <MdMenu />
+                        </ActionButton>
+                    </div>
+                    {isNavOpen && (
+                        <div 
+                            className="mobileNavBg"
+                            aria-label="close menu" 
+                            role="button" 
+                            tabIndex={0} 
+                            onClick={() => setIsNavOpen(false)}
+                            onKeyDown={() => setIsNavOpen(false)}
+
+                        />
+                    )}
                     <nav>
-                        {/* <ActionButton className='mobileMenuCloseBtn'
+                        <ActionButton className='mobileMenuCloseBtn'
                             onClick={() => setIsNavOpen(false)}
                             onKeyDown={() => setIsNavOpen(false)}
                             >
                             <MdClose/>    
-                        </ActionButton>    */}
+                        </ActionButton>   
                         <ul>    
                             {menu.map(item => (
                             <li key={item.path}>
