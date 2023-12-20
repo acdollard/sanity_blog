@@ -31,7 +31,7 @@ function Header() {
                 <Logo />
                 <div className={clsx('nav__wrapper', isNavOpen && 'open')}>
                     <div className='mobileIcon'>
-                        <div className='searchIcon'>
+                        {/* <div className='searchIcon'>
                             <div className='searchIcon__wrapper'
                                 onClick={handleSearchModalOpen}
                                 onKeyDown={handleSearchModalOpen}
@@ -40,7 +40,7 @@ function Header() {
                             >
                                     <MdSearch />
                             </div>
-                        </div>
+                        </div> */}
                         <ActionButton className='mobileMenuBtn'
                             onClick={() => setIsNavOpen(true)}
                             onKeyDown={() => setIsNavOpen(true)}
