@@ -17,6 +17,7 @@ export const SingleAuthorStyles = styled.div`
   .bio {
     margin: 0 auto;
     max-width: 500px;
+    padding: 10px;
   }
   .hr {
     margin: 3rem 0;
