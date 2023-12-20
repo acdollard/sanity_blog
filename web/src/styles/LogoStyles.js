@@ -5,7 +5,7 @@ export default styled(Link)`
   display: inline-block;
   max-width: 200px;
   svg {
-    font-size: 3rem;
+    font-size: 30px;
     path {
       stroke: white;
     }
