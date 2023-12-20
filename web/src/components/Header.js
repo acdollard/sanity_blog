@@ -32,14 +32,14 @@ function Header() {
                 <div className={clsx('nav__wrapper', isNavOpen && 'open')}>
                     <div className='mobileIcon'>
                         <div className='searchIcon'>
-                            <div className='searchIcon__wrapper'
+                            {/* <div className='searchIcon__wrapper'
                                 onClick={handleSearchModalOpen}
                                 onKeyDown={handleSearchModalOpen}
                                 role="button"
                                 tabIndex={0}
                             >
                                     <MdSearch />
-                            </div>
+                            </div> */}
                         </div>
                         <ActionButton className='mobileMenuBtn'
                             onClick={() => setIsNavOpen(true)}
