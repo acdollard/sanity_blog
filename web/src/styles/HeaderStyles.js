@@ -42,7 +42,7 @@ export default styled.header`
 
   .searchIcon {
     cursor: pointer;
-    font-size: 25px;
+  
     .searchIcon__wrapper {
       border-radius: 6px;
       padding: 1rem;
@@ -132,10 +132,6 @@ export default styled.header`
       display: flex;
       gap: 1rem;
     }
-    .mobileMenuBtn {
-      svg {
-        font-size: 2.5rem;
-      }
-    }
+
   }
 `;
