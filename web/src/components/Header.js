@@ -45,7 +45,7 @@ function Header() {
                             onClick={() => setIsNavOpen(true)}
                             onKeyDown={() => setIsNavOpen(true)}
                             >
-                            <MdMenu />
+                            <MdMenu style={{fontSize: '30px'}}/>
                         </ActionButton>
                     </div>
                     {isNavOpen && (
