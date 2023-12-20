@@ -74,7 +74,6 @@ export default styled.header`
         width: 80%;
         transform: translateX(100%);
         background-color: var(--black-2);
-        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
