@@ -9,5 +9,6 @@ export default styled(Link)`
     path {
       stroke: white;
     }
+    max-height: 30px;
   }
 `;
