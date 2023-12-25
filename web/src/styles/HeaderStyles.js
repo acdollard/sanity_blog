@@ -64,6 +64,7 @@ export default styled.header`
     .mobileIcon,
     .mobileMenuBtn {
       display: initial;
+      max-height: 30px;
     }
     .nav__wrapper {
       nav {
