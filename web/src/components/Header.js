@@ -64,7 +64,7 @@ function Header() {
                             onClick={() => setIsNavOpen(false)}
                             onKeyDown={() => setIsNavOpen(false)}
                             >
-                            <MdClose/>    
+                            <MdClose style={{fontSize: '30px', maxHeight: '30px'}}/>    
                         </ActionButton>   
                         <ul>    
                             {menu.map(item => (
@@ -72,16 +72,6 @@ function Header() {
                                 <Link to={item.path} onClick={handleNavItemClick}>{item.title}</Link>
                             </li>
                             ))}
-                            {/* <li className='searchIcon'> 
-                                <div className='searchIcon__wrapper'
-                                onClick={handleSearchModalOpen}
-                                onKeyDown={handleSearchModalOpen}
-                                role="button"
-                                tabIndex={0}
-                                >
-                                <MdSearch />
-                                </div>
-                            </li> */}
                         </ul>
                     </nav>
                 </div>    
