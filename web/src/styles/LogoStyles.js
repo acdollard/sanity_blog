@@ -10,5 +10,6 @@ export default styled(Link)`
       stroke: white;
     }
     max-height: 30px;
+    max-width: 30px;
   }
 `;
