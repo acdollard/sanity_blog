@@ -21,7 +21,7 @@ function BlogItem({ title, path, image, categories, publishedAt }) {
       </Link>
       {publishedAt && (
         <ParagraphText className="publishedAt">
-          {format(new Date(publishedAt), 'p, MMMM dd, yyyy')}
+          {format(new Date(publishedAt), 'MMMM dd, yyyy')}
         </ParagraphText>
       )}
       <ParagraphText className="categoriesText">

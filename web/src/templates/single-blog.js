@@ -57,7 +57,7 @@ function SingleBlog({ data }) {
             <ParagraphText className="publishedAt">
               <FiCalendar style={{height: '1em', width: '1em'}}/>
               {format(new Date(blog.publishedAt), 
-              'p, MMMM dd yyyy')}
+              'MMMM dd yyyy')}
             </ParagraphText>
             <ParagraphText
               className="categoriesText">
@@ -73,13 +73,6 @@ function SingleBlog({ data }) {
                     </span >
                 ))}
               </span>
-            </ParagraphText>
-            <ParagraphText className="author">
-              <FiUser style={{height: '1em', width: '1em'}}>
-                <Link to={`/authors/${blog.author?.slug.current}`}>
-                  {blog.author?.name}
-                </Link>
-              </FiUser>
             </ParagraphText>
           </div>
           <hr className="hr" />
