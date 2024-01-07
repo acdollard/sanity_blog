@@ -23,10 +23,7 @@ function Footer() {
               <a href={item.url}>{item.icon}</a>
             </li>
           ))}
-        </ul>
-        <ParagraphText className="copyright">
-          An Alex Dollard Creative {new Date().getFullYear()}. All rights reserved.
-        </ParagraphText>
+        </ul> 
       </div>
     </FooterStyles>
   );
