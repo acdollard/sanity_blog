@@ -11,5 +11,7 @@ export default styled(Link)`
     }
     max-height: 30px;
     max-width: 30px;
+    height: 30px;
+    width: 30px;
   }
 `;

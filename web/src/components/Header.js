@@ -37,7 +37,7 @@ function Header() {
                             onClick={() => setIsNavOpen(true)}
                             onKeyDown={() => setIsNavOpen(true)}
                             >
-                            <MdMenu style={{fontSize: '30px', maxHeight: '30px', maxWidth: '30px'}}/>
+                            <MdMenu style={{fontSize: '30px', maxHeight: '30px', maxWidth: '30px', height: '30px', width: '30px'}}/>
                         </ActionButton>
                     </div>
                     {isNavOpen && (
@@ -56,7 +56,7 @@ function Header() {
                             onClick={() => setIsNavOpen(false)}
                             onKeyDown={() => setIsNavOpen(false)}
                             >
-                            <MdClose style={{fontSize: '30px', maxHeight: '30px',  maxWidth: '30px'}}/>    
+                            <MdClose style={{fontSize: '30px', maxHeight: '30px',  maxWidth: '30px', height: '30px', width: '30px'}}/>    
                         </ActionButton>   
                         <ul>    
                             {menu.map(item => (
