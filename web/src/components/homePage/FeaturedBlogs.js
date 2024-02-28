@@ -5,37 +5,37 @@ import { SectionTitle } from "../typography/Title";
 import ParagraphText from "../typography/ParagraphText";
 import  BlogGrid  from "../blog/BlogGrid";
 
-function FeaturedBlogs() {
-  // const data = useStaticQuery(graphql`
-  //   query MyQuery {
-  //     allSanityFeatured(filter: { _id: { eq: "featuredItems" } }) {
-  //       nodes {
-  //         blog {
-  //           title
-  //           id
-  //           publishedAt
-  //           categories {
-  //             title
-  //             slug {
-  //               current
-  //             }
-  //           }
-  //           coverImage {
-  //             alt
-  //             asset {
-  //               gatsbyImageData
-  //             }
-  //           }
-  //           slug {
-  //             current
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
+// function FeaturedBlogs() {
+//   const data = useStaticQuery(graphql`
+//     // query MyQuery {
+//     //   allSanityFeatured(filter: { _id: { eq: "featuredItems" } }) {
+//     //     nodes {
+//     //       blog {
+//     //         title  
+//     //         id
+//     //         publishedAt
+//     //         categories {
+//     //           title
+//     //           slug {
+//     //             current
+//     //           }
+//     //         }
+//     //         coverImage {
+//     //           alt
+//     //           asset {
+//     //             gatsbyImageData
+//     //           }
+//     //         }
+//     //         slug {
+//     //           current
+//     //         }
+//     //       }
+//     //     }
+//     //   }
+//     // }
+//   `);
 
-  //const featuredBlogs = data.allSanityFeatured.nodes[0].blog;
+  const featuredBlogs = data.allSanityFeatured.nodes[0].blog;
 
   return (
     <FeaturedBlogsStyles>
@@ -46,8 +46,9 @@ function FeaturedBlogs() {
       <BlogGrid blogs={featuredBlogs}/> */}
     </FeaturedBlogsStyles>
   );
-}
+//}
 
 
 export default FeaturedBlogs;
 
+ 
