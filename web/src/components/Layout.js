@@ -1,9 +1,9 @@
 import React from 'react'
-import { SearchModalContext, SearchModalContextProvider } from '../context/searchModalContext';
+import { SearchModalContextProvider } from '../context/searchModalContext';
 import GlobalStyles from '../styles/GlobalStyles';
 import Header from './Header';
 import Footer from './Footer';
-import Search from './search/SearchModal';
+// import Search from './search/SearchModal';
 
 function Layout({ children }) {
   return (
@@ -11,6 +11,7 @@ function Layout({ children }) {
     <GlobalStyles/>
 
     <Header />
+    {/* <Search /> */}
     {children}
     <Footer></Footer>
     </SearchModalContextProvider>

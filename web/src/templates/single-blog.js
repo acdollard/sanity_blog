@@ -1,6 +1,6 @@
 import React from 'react';  
 import { graphql, Link } from 'gatsby';
-import { FiCalendar, FiUser } from 'react-icons/fi';
+import { FiCalendar } from 'react-icons/fi';
 import { BiCategory } from 'react-icons/bi';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import  { format } from 'date-fns';

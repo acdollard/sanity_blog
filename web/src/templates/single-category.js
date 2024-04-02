@@ -20,8 +20,11 @@ export const query = graphql`
         alt
       }
     }
-    allSanityBlog(  filter: { categories: { elemMatch: { id:
-    {eq: $id}}}}) {
+    allSanityBlog(  
+      filter: { categories: { elemMatch: { id:
+    {eq: $id}}}}
+    sort: { fields: publishedAt, order: DESC }
+    ) {
       nodes{
         id
         title

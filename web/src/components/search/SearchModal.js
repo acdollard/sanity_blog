@@ -22,9 +22,9 @@ function Search() {
         <MdClose/>
       </ActionButton>
       <SearchField
-      value={searchQuery}
-      setValue={setSearchQuery}
-      onFocus={handleOnFocus}
+        value={searchQuery}
+        setValue={setSearchQuery}
+        onFocus={handleOnFocus}
       />
     </div>
   </SearchModalStyles>
