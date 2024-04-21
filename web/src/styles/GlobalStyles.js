@@ -42,6 +42,7 @@ const GlobalStyles = createGlobalStyle`
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
+    
   }
   img, svg{
     height: 100%;
